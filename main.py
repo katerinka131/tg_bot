@@ -25,7 +25,6 @@ class BotCommand(Enum):
     :ivar UNTRACK: Команда для прекращения отслеживания ссылки.
     :ivar LIST: Команда для вывода списка отслеживаемых ссылок.
     :ivar CHAT_ID: Команда для получения ID чата.
-
     """
 
     START = "/start"
