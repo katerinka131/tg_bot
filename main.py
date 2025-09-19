@@ -35,6 +35,7 @@ class BotCommand(Enum):
     CHAT_ID = "/chat_id"
 
 def main() -> None:
+    
     """Инициализирует и запускает Telegram-бота c использованием Telethon.
 
     Создаёт и настраивает TelegramClient c использованием настроек бота.
