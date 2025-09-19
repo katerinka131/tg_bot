@@ -75,6 +75,7 @@ def main() -> None:
             client.run_until_disconnected()
         except KeyboardInterrupt:
             pass
+        
         except Exception as exc:
             logger.exception(
                 "Main loop raised error.",
@@ -83,5 +84,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    
+
     main()
