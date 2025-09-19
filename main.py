@@ -35,7 +35,7 @@ class BotCommand(Enum):
     CHAT_ID = "/chat_id"
 
 def main() -> None:
-    
+
     """Инициализирует и запускает Telegram-бота c использованием Telethon.
 
     Создаёт и настраивает TelegramClient c использованием настроек бота.
@@ -48,7 +48,7 @@ def main() -> None:
     logger.info("Run the event loop to start receiving messages")
 
     client = TelegramClient("bot_session", settings.api_id, settings.api_hash).start(
-        bot_token=settings.token,
+        bot_token= settings.token,
     )
 
     command_handlers = {
