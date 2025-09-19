@@ -43,7 +43,7 @@ def main() -> None:
     Регистрирует обработчик для неизвестных команд и общий обработчик для сообщений.
     Запускает цикл получения сооб щений от пользователей до отключения клиента.
 
-    :return: None
+    :return: None 
     """
     logger.info("Run the event loop to start receiving messages")
 
