@@ -27,6 +27,9 @@ class BotCommand(Enum):
     :ivar CHAT_ID: Команда для получения ID чата.
     """
 
+
+
+
     START = "/start"
     HELP = "/help"
     TRACK = "/track"
@@ -75,7 +78,7 @@ def main() -> None:
             client.run_until_disconnected()
         except KeyboardInterrupt:
             pass
-        
+
         except Exception as exc:
             logger.exception(
                 "Main loop raised error.",
