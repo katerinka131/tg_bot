@@ -77,6 +77,7 @@ def main() -> None:
         except KeyboardInterrupt:
             pass
 
+
         except Exception as exc:
             logger.exception(
                 "Main loop raised error.",
