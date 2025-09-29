@@ -70,7 +70,7 @@ def main() -> None:
         events.NewMessage(pattern=rf"/(?!{excluded_commands})\w+"),
     )
 
-    client.add_event_handler(msg_handler, events.NewMessage(pattern=r"^[^/]"))
+    client.add_event_handler(msg_handler , events.NewMessage(pattern=r"^[^/]"))
     with client:
         try:
             client.run_until_disconnected()
