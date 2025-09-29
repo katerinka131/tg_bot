@@ -80,7 +80,7 @@ def main() -> None:
 
         except Exception as exc:
             logger.exception(
-                "Main  loop raised error.", 
+                "Main  loop raised error. ", 
                 extra={"exc": exc}, 
             )
 
