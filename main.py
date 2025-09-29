@@ -74,7 +74,7 @@ def main() -> None:
     with client:
         try:
             client.run_until_disconnected()
-        except KeyboardInterrupt:
+        except KeyboardInterrupt: 
             pass
 
 
