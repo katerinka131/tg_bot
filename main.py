@@ -22,7 +22,7 @@ class BotCommand(Enum):
 
     :ivar START: Команда для регистрации пользователя.
     :ivar HELP: Команда для отображения справки.
-    :ivar TRACK: Команда для начала  отслеживания ссылки.
+    :ivar TRACK: Команда для на чала  отслеживания ссылки.
     :ivar UNTRACK : Команда для прекращения отслеживания ссылки.
     :ivar LIST: Команда для вывода списка отслеживаемых ссылок.
     :ivar CHAT_ID: Команда  для получния ID чата.
@@ -48,7 +48,7 @@ def main() -> None:
     """
     logger.info("Run  the event loop to start receiving messages")
 
-    client = TelegramClient("bot_session", settings.api_id, settings.api_hash).start(
+    client =TelegramClient("bot_session", settings.api_id, settings.api_hash).start(
         bot_token = settings.token,
     )
 
