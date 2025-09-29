@@ -62,7 +62,7 @@ def main() -> None:
     }
 
     for command, handler in command_handlers.items():
-        client.add_event_handler(handler, events.NewMessage(pattern=rf"^{command}"))
+        client.add_event_handler(handler,events.NewMessage(pattern=rf"^{command}"))
 
     excluded_commands = "|".join(cmd.name.lower() for cmd in BotCommand)
     client.add_event_handler(
