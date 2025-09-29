@@ -49,7 +49,7 @@ def main() -> None:
     logger.info("Run  the event loop to start receiving messages")
 
     client = TelegramClient("bot_session", settings.api_id, settings.api_hash).start(
-        bot_token= settings.token,
+        bot_token = settings.token,
     )
 
     command_handlers = {
