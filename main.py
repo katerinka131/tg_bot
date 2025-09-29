@@ -14,6 +14,7 @@ from enum import Enum
 
 
 class BotCommand(Enum):
+
     """Перечисление команд, поддерживаемых Telegram-ботом.
 
     Содержит список фиксированных команд, которые бот распознаёт и обрабатывает.
@@ -45,7 +46,7 @@ def main() -> None:
 
     :return: None 
     """
-    logger.info("Run the event loop to start receiving messages")
+    logger.info("Run  the event loop to start receiving messages")
 
     client = TelegramClient("bot_session", settings.api_id, settings.api_hash).start(
         bot_token= settings.token,
@@ -86,5 +87,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-
     main()
